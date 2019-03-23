@@ -13,4 +13,5 @@ export default Component.extend({
   bookCover: alias('book.bookCover'),
   pageCount: alias('book.pageCount'),
   title: alias('book.title'),
+  description: alias('book.description')
 });

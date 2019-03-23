@@ -1,8 +1,11 @@
 <div class='card'>
-  <img class='card__image' src={{bookCover}} alt='Book Cover'>
-  <div class='card__details'>
-    <h3 class='card__title'>{{title}}</h3>
-    <p class='card__detail'>By: {{author}}</p>
-    <p class='card__detail'>Page Count: {{pageCount}}</p>
+  <div class='card__title'>{{title}}</div>
+  <div class='card__main'>
+    <img class='card__image' src={{bookCover}} alt='Book Cover'>
+    <div class='card__details'>
+      <p class='card__description card__detail'>{{description}}</p>
+      <p class='card__detail'>By: {{author}}</p>
+      <p class='card__detail'>Page Count: {{pageCount}}</p>
+    </div>
   </div>
 </div>

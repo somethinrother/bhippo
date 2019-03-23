@@ -1,27 +1,46 @@
 .card {
-  display: inline-flex;
-  padding: 15px;
-  padding-right: 0;
-  text-align: center;
   border: solid 1px;
   border-radius: 5px;
-  margin: 10px;
+  margin: 15px;
+  text-align: center;
+
+  &__main {
+    display: flex;
+    margin: 15px;
+    margin-right: 0;
+  }
 
   &__details {
     width: 200px;
-    margin: 15px;
-    padding: 15px;
+    margin-left: 15px;
     border-left: solid 1px;
   }
 
-  &__title {
+  &__detail {
+    padding: 0 15px;
   }
 
-  &__detail {
+  &__description {
+    width: 200px;
+    max-height: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__title {
+    font-size: 26px;
+    background-color: #FFEBEE;
+    max-width: 380px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   &__image {
     min-height: 270px;
+    max-height: 270px;
     min-width: 150px;
+    max-width: 150px;
   }
 }
