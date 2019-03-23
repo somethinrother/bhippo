@@ -22,13 +22,17 @@
 
   &__description {
     width: 200px;
-    max-height: 170px;
+    max-height: 197px;
     overflow: hidden;
+    border-bottom: solid 1px;
+    margin-bottom: 15px;
   }
 
   &__title {
     font-size: 26px;
-    background-color: #FFEBEE;
+    font-weight: 700;
+    color: $white;
+    background-color: $bookhippo-purple;
     max-width: 380px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
