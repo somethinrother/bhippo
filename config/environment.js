@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'bhippo',
+    podModulePrefix: 'bhippo/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
