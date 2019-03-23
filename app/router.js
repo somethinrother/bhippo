@@ -7,7 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('book', { path: '/' })
+  this.route('book', { path: '/' }, function() {
+    this.route('index', { path: '' });
+  });
 });
 
 export default Router;
