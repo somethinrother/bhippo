@@ -3,6 +3,7 @@
   border-radius: 5px;
   margin: 15px;
   text-align: center;
+  background-color: $bh-light-purple;
 
   &__main {
     display: flex;
@@ -17,13 +18,18 @@
   }
 
   &__detail {
+    max-width: 200px;
     padding: 0 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   &__description {
     width: 200px;
     max-height: 197px;
     overflow: hidden;
+    white-space: normal;
     border-bottom: solid 1px;
     margin-bottom: 15px;
   }
@@ -32,7 +38,7 @@
     font-size: 26px;
     font-weight: 700;
     color: $white;
-    background-color: $bookhippo-purple;
+    background-color: $bh-purple;
     max-width: 380px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
