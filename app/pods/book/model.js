@@ -8,13 +8,12 @@ export default Model.extend({
 
   // ATTRIBUTES
   author: attr('string'),
-  average_rating: attr('number'),
-  book_cover: attr('string'),
+  averageRating: attr('number'),
+  bookCover: attr('string'),
   description: attr('string'),
   isbn: attr('string'),
-  ny_times_list: attr('string'),
-  page_count: attr('number'),
+  pageCount: attr('number'),
   publisher: attr('string'),
-  small_thumbnail: attr('string'),
+  smallThumbnail: attr('string'),
   title: attr('string'),
 });
