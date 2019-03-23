@@ -1,5 +1,9 @@
 // VARIABLES
-@import "styles/variables/_colors";
+@import 'styles/variables/_colors';
 
 // COMPONENTS
-@import "pods/components/footer-bar/styles";
+@import 'pods/components/footer-bar/styles';
+@import 'pods/components/book-card/styles';
+
+// ROUTES
+@import 'pods/application/styles';

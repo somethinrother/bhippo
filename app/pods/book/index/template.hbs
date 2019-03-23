@@ -1,3 +1,7 @@
-Hi there
-
-{{footer-bar}}
+<div class='flex'>
+  {{#each genres as |genre|}}
+    {{#each genre.books as |book|}}
+      {{book-card book=book}}
+    {{/each}}
+  {{/each}}
+</div>

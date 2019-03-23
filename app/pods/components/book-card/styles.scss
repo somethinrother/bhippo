@@ -1,0 +1,56 @@
+.card {
+  border: solid 1px;
+  border-radius: 5px;
+  margin: 15px;
+  text-align: center;
+  background-color: $bh-light-purple;
+
+  &__main {
+    display: flex;
+    margin: 15px;
+    margin-right: 0;
+  }
+
+  &__details {
+    width: 200px;
+    margin-left: 15px;
+    border-left: solid 1px;
+  }
+
+  &__detail {
+    max-width: 200px;
+    padding: 0 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__description {
+    width: 200px;
+    max-height: 197px;
+    overflow: hidden;
+    white-space: normal;
+    border-bottom: solid 1px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    color: $white;
+    background-color: $bh-purple;
+    max-width: 380px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+  }
+
+  &__image {
+    min-height: 270px;
+    max-height: 270px;
+    min-width: 150px;
+    max-width: 150px;
+  }
+}
