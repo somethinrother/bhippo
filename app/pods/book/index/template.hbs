@@ -1,5 +1,7 @@
-{{#each genres as |genre|}}
-  {{#each genre.books as |book|}}
-    {{book-card book=book}}
+<div class='flex'>
+  {{#each genres as |genre|}}
+    {{#each genre.books as |book|}}
+      {{book-card class='card' book=book}}
+    {{/each}}
   {{/each}}
-{{/each}}
+</div>
