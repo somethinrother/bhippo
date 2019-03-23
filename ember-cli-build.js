@@ -8,6 +8,12 @@ module.exports = function(defaults) {
       includePaths: [
         'app'
       ]
+    },
+
+    nodeAssets: {
+      'simple-css-reset': {
+        import: ['reset.css']
+      }
     }
   });
   return app.toTree();
