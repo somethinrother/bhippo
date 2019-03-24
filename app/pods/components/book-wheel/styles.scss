@@ -5,7 +5,7 @@
   border-bottom: solid 1px $white;
 
   &__title {
-    background-color: #333;
+    background-color: $title-bar-gray;
     font-size: 32px;
     text-transform: capitalize;
     color: $white;
