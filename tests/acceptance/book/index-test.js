@@ -4,7 +4,7 @@ import { setupApplicationTest } from 'ember-qunit';
 import setupMirage from 'ember-cli-mirage/test-support/setup-mirage';
 import defaultScenario from 'bhippo/mirage/scenarios/default';
 
-module('Acceptance | application', function(hooks) {
+module('Acceptance | book | index', function(hooks) {
   setupApplicationTest(hooks);
   setupMirage(hooks);
 
@@ -12,8 +12,11 @@ module('Acceptance | application', function(hooks) {
     defaultScenario(server);
   });
 
-  test('should render the footer', async function(assert) {
+  test('should render one book wheel for each genre', async function(assert) {
+    const genres = server.db.genres;
     await visit('/');
-    assert.dom('[data-test-footer="bar"]').exists();
+    genres.forEach(function(genre) {
+      assert.dom(`[data-test-book-wheel="title-${genre.name}"]`).hasText(genre.name);
+    });
   });
 });
