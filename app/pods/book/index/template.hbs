@@ -1,7 +1,7 @@
-<div class='flex'>
   {{#each genres as |genre|}}
+  <div class="scrollmenu">
     {{#each genre.books as |book|}}
-      {{book-card book=book}}
+      {{book-card book=book class='item'}}
     {{/each}}
+  </div>
   {{/each}}
-</div>
