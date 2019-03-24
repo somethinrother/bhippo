@@ -2,10 +2,21 @@
   background-color: #333;
   overflow: auto;
   white-space: nowrap;
+  border-bottom: solid 1px $white;
+
+  &__title {
+    background-color: #333;
+    font-size: 32px;
+    padding-left: 32px;
+    padding-top: 10px;
+    text-transform: capitalize;
+    color: $white;
+    border-bottom: solid 2px $white;
+  }
 
   &__item {
+    color: $white;
     display: inline-block;
-    color: white;
     text-align: center;
     padding: 14px;
     text-decoration: none;
