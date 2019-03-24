@@ -1,11 +1,13 @@
-<div class='card'>
-  <div class='card__title' data-test-book-card='title'>{{title}}</div>
-  <div class='card__main'>
-    <img class='card__image' src={{bookCover}} alt='Book Cover' data-test-book-card='image'>
-    <div class='card__details'>
-      <p class='card__detail card__description' data-test-book-card='description'>{{description}}</p>
-      <p class='card__detail' data-test-book-card='author'>By: {{author}}</p>
-      <p class='card__detail' data-test-book-card='page-count'>Page Count: {{pageCount}}</p>
+{{#link-to 'book.show' book}}
+  <div class='card'>
+    <div class='card__title' data-test-book-card='title'>{{title}}</div>
+    <div class='card__main'>
+      <img class='card__image' src={{bookCover}} alt='Book Cover' data-test-book-card='image'>
+      <div class='card__details'>
+        <p class='card__detail card__description' data-test-book-card='description'>{{description}}</p>
+        <p class='card__detail' data-test-book-card='author'>By: {{author}}</p>
+        <p class='card__detail' data-test-book-card='page-count'>Page Count: {{pageCount}}</p>
+      </div>
     </div>
   </div>
-</div>
+{{/link-to}}
