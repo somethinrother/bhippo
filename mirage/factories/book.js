@@ -1,4 +1,4 @@
-import { Factory, faker } from 'ember-cli-mirage';
+import { Factory, faker, association } from 'ember-cli-mirage';
 
 export default Factory.extend({
   author() {
@@ -30,4 +30,5 @@ export default Factory.extend({
   title() {
     return faker.lorem.word();
   },
+  genre: association()
 });
