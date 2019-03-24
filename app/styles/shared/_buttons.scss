@@ -1,0 +1,19 @@
+.button {
+  &__primary {
+    display: inline-flex;
+    color: $white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: solid 3px $bh-purple;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: $bh-purple;
+
+    &:hover, :active {
+      color: $black;
+      background-color: $white;
+    }
+  }
+}

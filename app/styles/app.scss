@@ -1,11 +1,14 @@
 // VARIABLES
 @import 'styles/variables/_colors';
 
-// COMPONENTS
-@import 'pods/components/footer-bar/styles';
-@import 'pods/components/book-card/styles';
-@import 'pods/components/book-wheel/styles';
+// SHARED STYLES
+@import 'styles/shared/_buttons';
 
 // ROUTES
 @import 'pods/application/styles';
 @import 'pods/book/show/styles';
+
+// COMPONENTS
+@import 'pods/components/footer-bar/styles';
+@import 'pods/components/book-card/styles';
+@import 'pods/components/book-wheel/styles';

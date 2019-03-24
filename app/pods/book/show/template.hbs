@@ -1,5 +1,7 @@
-{{link-to 'back' 'book.index' class='back-button'}}
-<div class='book-page__title'>{{book.title}}</div>
-<div class=''>By: {{book.author}}</div>
-<img src={{book.bookCover}} alt='{{book.title}} Cover Art'>
-<div class=''>{{book.description}}</div>
+<div class='book-page'>
+  <div class='book-page__title'>{{book.title}}</div>
+  <div class=''>By: {{book.author}}</div>
+  <img src={{book.bookCover}} alt='{{book.title}} Cover Art'>
+  <div class='book-page__description'>{{book.description}}</div>
+  {{link-to 'back' 'book.index' class='button__primary' tagName='a'}}
+</div>

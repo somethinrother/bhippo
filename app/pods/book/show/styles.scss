@@ -1,6 +1,11 @@
 .book-page {
+  margin: 10px;
 
   &__title {
     font-size: 32px;
+  }
+
+  &__description {
+    margin-bottom: 10px;
   }
 }
