@@ -1,0 +1,20 @@
+.book-page {
+
+  &__title {
+    font-size: 32px;
+    background-color: $title-bar-gray;
+    color: $white;
+    line-height: 1.5;
+    padding-left: 5px;
+  }
+
+  &__details {
+    padding: 15px;
+    margin: 0 10px;
+    background-color: $scroll-gray;
+  }
+
+  &__description {
+    margin-bottom: 10px;
+  }
+}

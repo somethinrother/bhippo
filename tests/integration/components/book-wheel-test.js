@@ -17,10 +17,10 @@ module('Integration | Components | book wheel', function(hooks) {
   });
 
   test('it renders', async function(assert) {
-    assert.dom('[data-test-book-wheel="title"]').exists();
+    assert.dom(`[data-test-book-wheel="title-${genre.name}"]`).exists();
   });
 
   test('title is correct', async function(assert) {
-    assert.dom('[data-test-book-wheel="title"]').hasText(genre.name);
+    assert.dom(`[data-test-book-wheel="title-${genre.name}"]`).hasText(genre.name);
   });
 });

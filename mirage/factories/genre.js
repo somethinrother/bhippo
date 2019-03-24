@@ -6,8 +6,8 @@ export default Factory.extend({
   },
 
   withBooks: trait({
-    afterCreate(forum, server) {
-      server.createList('book', 10);
+    afterCreate(genre, server) {
+      server.createList('book', 10, { genre });
     }
   })
 });

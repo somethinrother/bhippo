@@ -1,0 +1,9 @@
+<div class='book-page'>
+  <div class='book-page__title' data-test-book-card='title'>{{book.title}}</div>
+  <div class='book-page__details'>
+    <img src={{book.bookCover}} alt='{{book.title}} Cover Art'>
+    <div class=''>By: {{author}}</div>
+    <div class='book-page__description'>{{book.description}}</div>
+    {{link-to 'back' 'book.index' class='button__primary' tagName='a'}}
+  </div>
+</div>

@@ -17,7 +17,7 @@ module('Integration | Components | book card', function(hooks) {
   });
 
   test('it renders', async function(assert) {
-    assert.dom('[data-test-book-card="title"]').exists();
+    assert.dom(`[data-test-book-card="title-${book.title}"]`).exists();
     assert.dom('[data-test-book-card="image"]').exists();
     assert.dom('[data-test-book-card="description"]').exists();
     assert.dom('[data-test-book-card="author"]').exists();
@@ -25,7 +25,7 @@ module('Integration | Components | book card', function(hooks) {
   });
 
   test('dynamic fields contain correct values', async function(assert) {
-    assert.dom('[data-test-book-card="title"]').hasText(book.title);
+    assert.dom(`[data-test-book-card="title-${book.title}"]`).hasText(book.title);
     assert.dom('[data-test-book-card="image"]').hasAttribute('src', book.bookCover);
     assert.dom('[data-test-book-card="description"]').hasText(book.description);
     assert.dom('[data-test-book-card="author"]').hasText(`By: ${book.author}`);

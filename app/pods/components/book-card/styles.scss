@@ -1,9 +1,5 @@
 .card {
-  border: solid 1px $black;
-  border-radius: 5px;
-  margin: 15px;
-  text-align: center;
-  background-color: $bh-light-purple;
+  text-decoration: none;
 
   &__main {
     display: flex;
