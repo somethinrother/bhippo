@@ -7,11 +7,10 @@
   &__title {
     background-color: #333;
     font-size: 32px;
-    padding-left: 32px;
-    padding-top: 10px;
     text-transform: capitalize;
     color: $white;
     border-bottom: solid 2px $white;
+    line-height: 1.5;
   }
 
   &__item {
