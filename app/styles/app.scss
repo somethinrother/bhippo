@@ -4,24 +4,7 @@
 // COMPONENTS
 @import 'pods/components/footer-bar/styles';
 @import 'pods/components/book-card/styles';
+@import 'pods/components/book-wheel/styles';
 
 // ROUTES
 @import 'pods/application/styles';
-
-.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.item {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: #777;
-}

@@ -1,0 +1,8 @@
+<div class='wheel'>
+  {{log genre.name}}
+  {{#each genre.books as |book|}}
+    <div class='wheel__item'>
+      {{book-card book=book}}
+    </div>
+  {{/each}}
+</div>

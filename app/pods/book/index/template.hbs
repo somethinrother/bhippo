@@ -1,7 +1,3 @@
-  {{#each genres as |genre|}}
-  <div class="scrollmenu">
-    {{#each genre.books as |book|}}
-      {{book-card book=book class='item'}}
-    {{/each}}
-  </div>
-  {{/each}}
+{{#each genres as |genre|}}
+  {{book-wheel genre=genre}}
+{{/each}}
