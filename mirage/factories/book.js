@@ -15,8 +15,8 @@ export default Factory.extend({
   description() {
     return faker.lorem.paragraph();
   },
-  isbn() {
-    return faker.random.number();
+  isbn(i) {
+    return i;
   },
   pageCount() {
     return faker.random.number();
