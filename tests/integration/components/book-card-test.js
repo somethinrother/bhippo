@@ -11,15 +11,12 @@ module('Integration | Components | book card', function(hooks) {
   setupMirage(hooks);
 
   hooks.beforeEach(async function() {
-
-
-  });
-
-  test('it renders', async function(assert) {
     book = server.create('book')
     this.book = book;
     await render(hbs`{{book-card book=book}}`);
+  });
 
+  test('it renders', async function(assert) {
     assert.dom('[data-test-book-card="title"]').exists();
     assert.dom('[data-test-book-card="image"]').exists();
     assert.dom('[data-test-book-card="description"]').exists();
@@ -28,10 +25,6 @@ module('Integration | Components | book card', function(hooks) {
   });
 
   test('dynamic fields contain correct values', async function(assert) {
-    book = server.create('book')
-    this.book = book;
-    await render(hbs`{{book-card book=book}}`);
-
     assert.dom('[data-test-book-card="title"]').hasText(book.title);
     assert.dom('[data-test-book-card="image"]').hasAttribute('src', book.bookCover);
     assert.dom('[data-test-book-card="description"]').hasText(book.description);

@@ -1,7 +1,13 @@
-import { Factory, faker } from 'ember-cli-mirage';
+import { Factory, faker, trait } from 'ember-cli-mirage';
 
 export default Factory.extend({
   name() {
-    faker.lorem.word();
-  }
+    return faker.lorem.word();
+  },
+
+  withBooks: trait({
+    afterCreate(forum, server) {
+      server.createList('book', 10);
+    }
+  })
 });
