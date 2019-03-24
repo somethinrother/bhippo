@@ -4,7 +4,7 @@ export default function() {
     let isbn = request.params.isbn;
     return schema.books.find(isbn);
   })
-  this.get('/genres?include=books', (schema) => {
+  this.get('/genres', (schema) => {
     return schema.genres.all();
   });
 }
