@@ -1,0 +1,6 @@
+<div class='wheel__title' data-test-book-wheel='title'>{{genre.name}}</div>
+<div class='wheel'>
+  {{#each genre.books as |book|}}
+    {{book-card book=book class='wheel__item'}}
+  {{/each}}
+</div>
