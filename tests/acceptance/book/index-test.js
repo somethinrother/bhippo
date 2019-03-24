@@ -19,4 +19,14 @@ module('Acceptance | book | index', function(hooks) {
       assert.dom(`[data-test-book-wheel="title-${genre.name}"]`).hasText(genre.name);
     });
   });
+
+  test('a given book wheel should contain all books in its genre', async function(assert) {
+    const genre = server.db.genres[0];
+    await visit('/');
+    assert.dom(`[data-test-book-wheel="title-${genre.name}"]`).hasText(genre.name);
+    genre.bookIds.forEach(function(bookId) {
+      let book = server.db.books.find(bookId);
+      assert.dom(`[data-test-book-card="title-${book.title}"]`).hasText(book.title);
+    });
+  });
 });
