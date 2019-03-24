@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit } from '@ember/test-helpers';
+import { visit, findAll } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 import setupMirage from 'ember-cli-mirage/test-support/setup-mirage';
 import defaultScenario from 'bhippo/mirage/scenarios/default';
@@ -18,6 +18,7 @@ module('Acceptance | book | index', function(hooks) {
     genres.forEach(function(genre) {
       assert.dom(`[data-test-book-wheel="title-${genre.name}"]`).hasText(genre.name);
     });
+    assert.equal(findAll('[data-test-book-wheel="wheel"]').length, genres.length)
   });
 
   test('a given book wheel should contain all books in its genre', async function(assert) {
